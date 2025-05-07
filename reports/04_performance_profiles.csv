@@ -1,0 +1,3 @@
+segment,count,mean_experience_years,female_ratio,mean_current_rating,mean_engagement_score,mean_desired_salary,mean_training_days,top_3_departments
+High Performance (>=4),369,2.85,0.66,2.97,2.85,65334.75,2.92,"['Production       ', 'IT/IS', 'Sales']"
+Low Performance (<=2),270,2.83,0.6,3.01,2.87,66800.38,2.97,"['Production       ', 'IT/IS', 'Sales']"
