@@ -37,9 +37,11 @@ for col in ['application_date', 'date_of_birth']:
 print("\nMissing values before imputation:")
 print(df_recruitment.isnull().sum())
 
-# Imputar desired_salary con la media
-if 'desired_salary' in df_recruitment.columns:
-    df_recruitment['desired_salary'].fillna(df_recruitment['desired_salary'].mean(), inplace=True)
+#Elimino columnas irrelevantes
+to_drop = ['phone_number', 'address', 'email']
+for col in to_drop:
+    if col in df_recruitment.columns:
+        df_recruitment.drop(columns=col, inplace=True)
 
 # Rellenar status faltante como 'Unknown'
 if 'status' in df_recruitment.columns:

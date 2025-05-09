@@ -47,7 +47,7 @@ df_employee['current_rating']  = df_employee['current_rating'].astype(int)
 
 # 8. Eliminación de columnas irrelevantes
 to_drop = []
-for col in ['ad_email', 'terminationtype']:
+for col in ['ademail', 'terminationtype']:
     if col in df_employee.columns:
         to_drop.append(col)
 if to_drop:
